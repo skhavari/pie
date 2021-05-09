@@ -4,6 +4,7 @@ import * as path from 'https://deno.land/std/path/mod.ts';
 
 const scriptURL = new URL(import.meta.url);
 const STATIC_ROOT = path.join(path.dirname(scriptURL.pathname), 'static');
+console.log(STATIC_ROOT);
 
 export interface PieServerConfig {
     routeMap: Map<string, RouterMiddleware>;
