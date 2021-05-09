@@ -2,8 +2,8 @@ import { Application, Router, Middleware, RouterMiddleware } from 'https://deno.
 import logger from './logger.ts';
 import * as path from 'https://deno.land/std/path/mod.ts';
 
-const scriptURL = new URL(import.meta.url);
-const STATIC_ROOT = path.join(path.dirname(scriptURL.pathname), 'static');
+//const scriptURL = new URL(import.meta.url);
+const STATIC_ROOT = path.join(path.dirname(import.meta.url), 'static');
 console.log(STATIC_ROOT);
 
 export interface PieServerConfig {
